@@ -1,0 +1,99 @@
+{
+  "common": {
+    "companyName": "Nayuta Inspection",
+    "logoInitials": "IN"
+  },
+  "nav": {
+    "ariaLabel": "主导航",
+    "menu": "打开菜单",
+    "whatWeDo": "我们的服务",
+    "ourFirm": "关于我们",
+    "career": "加入我们",
+    "login": "登录"
+  },
+  "hero": {
+    "kicker": "值得信赖的质检",
+    "title": "值得信赖的独立验货",
+    "subtitle": "我们为全球品牌在中国提供透明、第三方的验货与质量控制方案，确保产品符合标准。",
+    "description": "从工厂审核到出货前抽检，我们的双语团队提供详尽报告、可执行洞察以及遍布中国制造中心的可靠合作伙伴。",
+    "cta": {
+      "primary": "联系我们",
+      "secondary": "了解更多"
+    },
+    "bullets": {
+      "quality": "资深验货员覆盖深圳、广州、宁波等主要制造城市。",
+      "speed": "48 小时内交付报告，配合您的生产节奏。",
+      "coverage": "多品类覆盖：消费电子、服装、家居等。",
+      "compliance": "提供符合北美与欧洲法规的合规指导。"
+    }
+  },
+  "pillars": {
+    "title": "为什么选择 Nayuta",
+    "intro": "我们将经验丰富的现场验货员与透明报告体系结合，让您的团队从工厂到出货全程掌握质量状况。",
+    "items": {
+      "expertise": {
+        "title": "深度行业经验",
+        "description": "本地质检团队配合实验室伙伴，基于复杂供应链打造细化检查清单。"
+      },
+      "visibility": {
+        "title": "透明可视化",
+        "description": "移动端仪表板、缺陷编码和双语备注，让每次验货一目了然。"
+      },
+      "partnership": {
+        "title": "贴身合作方式",
+        "description": "共创项目策略、供应商培训以及与各区域团队协同的升级流程。"
+      },
+      "resilience": {
+        "title": "韧性执行能力",
+        "description": "可扩展的验货网络，灵活应对旺季需求与新品发布。"
+      }
+    }
+  },
+  "footer": {
+    "companyName": "Nayuta Inspection",
+    "description": "独立第三方验货伙伴，双语团队深耕供应链，覆盖中国主要工厂，为全球品牌提供可信赖的品质保障。",
+    "rights": "版权所有。",
+    "linksTitle": "更多内容",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们",
+    "socialTitle": "社交媒体",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "xiaohongshu": "小红书",
+      "wechat": "微信"
+    },
+    "address": {
+      "locality": "温哥华",
+      "region": "卑诗省",
+      "country": "加拿大"
+    }
+  },
+  "language": {
+    "ariaLabel": "切换语言",
+    "options": {
+      "en": "EN",
+      "fr": "FR",
+      "zh": "中文"
+    }
+  },
+  "seo": {
+    "title": "Nayuta Inspection｜独立验货与质量控制服务",
+    "description": "为全球品牌提供中国现场验货、工厂审核与合规支持，双语专家团队交付可信赖的质量报告。",
+    "keywords": [
+      "验货服务",
+      "中国质量控制",
+      "第三方验货",
+      "工厂审核",
+      "供应链风险",
+      "产品合规"
+    ],
+    "ogTitle": "Nayuta Inspection｜独立验货与质量控制服务",
+    "ogDescription": "依托双语专家团队，在中国各大制造基地提供独立、可靠的验货与审核。",
+    "serviceName": "验货与质量保障",
+    "serviceType": "为全球品牌提供的独立第三方验货",
+    "twitterHandle": "@nayutainspection"
+  }
+}

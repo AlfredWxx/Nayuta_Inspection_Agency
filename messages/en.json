@@ -1,0 +1,99 @@
+{
+  "common": {
+    "companyName": "Nayuta Inspection",
+    "logoInitials": "IN"
+  },
+  "nav": {
+    "ariaLabel": "Primary navigation",
+    "menu": "Toggle navigation",
+    "whatWeDo": "What we do",
+    "ourFirm": "Our firm",
+    "career": "Career",
+    "login": "Login"
+  },
+  "hero": {
+    "kicker": "Trusted inspections",
+    "title": "Independent inspection you can trust",
+    "subtitle": "We help global brands ensure product quality in China with transparent, third-party inspection programs.",
+    "description": "From factory audits to pre-shipment checks, our bilingual team delivers detailed reports, actionable insights, and reliable partners across Chinese manufacturing hubs.",
+    "cta": {
+      "primary": "Get in touch",
+      "secondary": "Learn more"
+    },
+    "bullets": {
+      "quality": "Expert inspectors on site across Shenzhen, Guangzhou, Ningbo, and more.",
+      "speed": "48-hour turnaround for reports, aligned with your production milestones.",
+      "coverage": "Multi-category coverage including consumer electronics, apparel, and home goods.",
+      "compliance": "Compliance guidance aligned with North American and European regulations."
+    }
+  },
+  "pillars": {
+    "title": "Why brands choose Nayuta",
+    "intro": "Every program pairs field-proven inspectors with transparent reporting, so your teams gain certainty from factory floor to final shipment.",
+    "items": {
+      "expertise": {
+        "title": "Specialist expertise",
+        "description": "Local inspectors with lab partnerships and category-specific checklists built for complex supply chains."
+      },
+      "visibility": {
+        "title": "Full visibility",
+        "description": "Mobile-ready dashboards, detailed defect coding, and bilingual commentary for every inspection."
+      },
+      "partnership": {
+        "title": "Embedded partnership",
+        "description": "Program design workshops, vendor training, and escalation paths aligned with your regional teams."
+      },
+      "resilience": {
+        "title": "Program resilience",
+        "description": "Scalable network of inspectors ready to ramp with seasonal demand and new product launches."
+      }
+    }
+  },
+  "footer": {
+    "companyName": "Nayuta Inspection",
+    "description": "Independent inspection partner supporting global brands with bilingual teams, deep supply-chain insight, and trusted on-the-ground coverage across China.",
+    "rights": "All rights reserved.",
+    "linksTitle": "Explore",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "contact": "Contact us",
+    "socialTitle": "Connect with us",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "xiaohongshu": "Xiaohongshu",
+      "wechat": "WeChat"
+    },
+    "address": {
+      "locality": "Vancouver",
+      "region": "BC",
+      "country": "Canada"
+    }
+  },
+  "language": {
+    "ariaLabel": "Change language",
+    "options": {
+      "en": "EN",
+      "fr": "FR",
+      "zh": "中文"
+    }
+  },
+  "seo": {
+    "title": "Nayuta Inspection | Independent Inspection Services",
+    "description": "Inspection in China for global brands: on-site quality control, factory audits, and compliance assurance delivered by bilingual experts.",
+    "keywords": [
+      "inspection services",
+      "quality control china",
+      "third-party inspection",
+      "factory audits",
+      "supply chain risk",
+      "product compliance"
+    ],
+    "ogTitle": "Nayuta Inspection | Independent Inspection Services",
+    "ogDescription": "Empowering global brands with reliable, independent product inspections and audits throughout China.",
+    "serviceName": "Inspection and quality assurance",
+    "serviceType": "Independent third-party inspection for global brands",
+    "twitterHandle": "@nayutainspection"
+  }
+}

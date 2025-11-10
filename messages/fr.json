@@ -1,0 +1,99 @@
+{
+  "common": {
+    "companyName": "Nayuta Inspection",
+    "logoInitials": "IN"
+  },
+  "nav": {
+    "ariaLabel": "Navigation principale",
+    "menu": "Ouvrir le menu",
+    "whatWeDo": "Nos services",
+    "ourFirm": "Notre cabinet",
+    "career": "Carrières",
+    "login": "Connexion"
+  },
+  "hero": {
+    "kicker": "Inspections fiables",
+    "title": "Inspection indépendante, en toute confiance",
+    "subtitle": "Nous aidons les marques internationales à garantir la qualité de leurs produits en Chine grâce à des programmes d’inspection tiers transparents.",
+    "description": "Des audits d’usine aux contrôles avant expédition, notre équipe bilingue fournit des rapports détaillés, des analyses exploitables et des partenaires fiables dans les principaux bassins industriels chinois.",
+    "cta": {
+      "primary": "Contactez-nous",
+      "secondary": "En savoir plus"
+    },
+    "bullets": {
+      "quality": "Inspecteurs experts sur site à Shenzhen, Guangzhou, Ningbo et au-delà.",
+      "speed": "Rapports livrés en 48 heures, synchronisés avec vos jalons de production.",
+      "coverage": "Couverture multi-catégories : électronique grand public, mode, articles pour la maison.",
+      "compliance": "Accompagnement conformité adapté aux réglementations nord-américaines et européennes."
+    }
+  },
+  "pillars": {
+    "title": "Pourquoi les marques choisissent Nayuta",
+    "intro": "Nos programmes associent inspecteurs de terrain expérimentés et rapports transparents pour sécuriser vos opérations, de l’usine jusqu’à l’expédition finale.",
+    "items": {
+      "expertise": {
+        "title": "Expertise spécialisée",
+        "description": "Inspecteurs locaux, partenariats laboratoires et check-lists adaptées aux chaînes d’approvisionnement complexes."
+      },
+      "visibility": {
+        "title": "Visibilité totale",
+        "description": "Tableaux de bord mobiles, codification détaillée des défauts et commentaires bilingues pour chaque inspection."
+      },
+      "partnership": {
+        "title": "Partenaire intégré",
+        "description": "Ateliers de conception de programmes, formation des fournisseurs et circuits d’escalade alignés sur vos équipes régionales."
+      },
+      "resilience": {
+        "title": "Résilience opérationnelle",
+        "description": "Réseau d’inspecteurs extensible, prêt à absorber les pics saisonniers et les lancements de produits."
+      }
+    }
+  },
+  "footer": {
+    "companyName": "Nayuta Inspection",
+    "description": "Partenaire d’inspection indépendant, au service des marques mondiales avec des équipes bilingues, une connaissance approfondie de la chaîne d’approvisionnement et une présence terrain fiable en Chine.",
+    "rights": "Tous droits réservés.",
+    "linksTitle": "Explorer",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "contact": "Nous joindre",
+    "socialTitle": "Réseaux sociaux",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "xiaohongshu": "Xiaohongshu",
+      "wechat": "WeChat"
+    },
+    "address": {
+      "locality": "Vancouver",
+      "region": "CB",
+      "country": "Canada"
+    }
+  },
+  "language": {
+    "ariaLabel": "Changer de langue",
+    "options": {
+      "en": "EN",
+      "fr": "FR",
+      "zh": "中文"
+    }
+  },
+  "seo": {
+    "title": "Nayuta Inspection | Services d’inspection indépendants",
+    "description": "Inspection en Chine pour les marques internationales : contrôle qualité sur site, audits d’usine et assurance conformité fournis par des experts bilingues.",
+    "keywords": [
+      "services d’inspection",
+      "contrôle qualité chine",
+      "inspection tierce",
+      "audits d’usine",
+      "risque chaîne logistique",
+      "conformité produit"
+    ],
+    "ogTitle": "Nayuta Inspection | Services d’inspection indépendants",
+    "ogDescription": "Nous soutenons les marques mondiales avec des inspections et audits indépendants et fiables partout en Chine.",
+    "serviceName": "Inspection et assurance qualité",
+    "serviceType": "Inspection indépendante pour les marques internationales",
+    "twitterHandle": "@nayutainspection"
+  }
+}

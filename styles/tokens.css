@@ -1,0 +1,27 @@
+:root {
+  --color-brand: #5e8fcc;
+  --color-surface: #ffffff;
+  --color-body: #111111;
+  --color-muted: #6b7280;
+
+  --font-brand: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --layout-max-width: 1200px;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  --transition-default: 180ms ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --layout-max-width: min(100%, 1000px);
+  }
+}

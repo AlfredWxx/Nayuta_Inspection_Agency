@@ -1,0 +1,130 @@
+1. 项目目标与范围
+目标：建立一个可扩展的企业官网基础架构，当前仅实现首页（Header + Main + Footer）。
+技术栈：Next.js (App Router) + TypeScript + Tailwind CSS + next-intl。
+特点：支持 i18n (EN/FR/ZH)、SEO 、GEO 地理权重 、AI 索引；未来能快速增加页面与语言。
+风格：参考 Deloitte / Goldman Sachs / McKinsey ，克制、简洁、专业。
+禁止：硬编码文本、内联字体 base64 、无意义动效、低对比度配色。
+内容：我们是一个专注于检测中国工厂，提供验厂，验货等服务的国际化公司。我们服务于全球的客户来检验中国的产品质量（类似于qima）。
+
+2. 架构与文件结构
+使用 App Router 多语言目录：
+/(en)  /(fr)  /(zh)
+每个语言组含 layout.tsx 和 page.tsx。
+通用组件放在 /components：
+Header, Footer, Nav, LanguageSwitcher, Logo, SocialLinks, Container
+公共资源放在 /public/assets
+样式与主题：
+styles/tokens.css 定义色板、字号、间距、阴影
+Tailwind 读取这些 CSS 变量
+路由自动重定向由 middleware.ts 完成（读取 cookie 或 Accept-Language）
+**所有的代码都要注意好适配所有的设备，移动端电脑端等，以及语言切换的功能**
+
+3. Header / Main / Footer 规范
+Header (仿 Goldman Sachs)
+左： Logo (点击返回当前语言首页)
+中： “What we do / Our firm / Career”（暂不跳转）
+右： “Login” 按钮 + 一个Language Switcher (EN/FR/中文)
+移动端：汉堡菜单折叠，按钮带 aria-expanded 、 aria-controls
+语言切换：切换路由 + 更新 cookie NEXT_LOCALE
+样式：白底、细分隔线、居中对齐、hover 下划线
+Main
+大标题 + 一句品牌宣言 + 描述 + 两个占位按钮（Get in touch / Learn more）
+所有文案走 i18n JSON
+Footer
+左：公司简述、自动年份版权
+中：隐私 / 条款 / 联系 (占位链接)
+右：社交图标 LinkedIn / Instagram / Facebook / 小红书 / 微信
+外链 target="_blank" rel="noopener noreferrer"
+微信/小红书可先文字占位
+地址信息带 schema 标注 itemprop="address" (用于 GEO + AI 识别)
+
+
+4. 多语言 (i18n)
+默认 EN，支持 FR、ZH。
+文案集中于 /messages/{locale}.json ：
+{
+  "nav.whatWeDo": "What we do",
+  "nav.ourFirm": "Our firm",
+  "nav.career": "Career",
+  "nav.login": "Login",
+  "hero.title": "Independent inspection you can trust",
+  "hero.subtitle": "We help global brands ensure product quality in China.",
+  "footer.rights": "All rights reserved."
+}
+key 命名约定：
+- 第一层命名空间对应功能模块，如 nav. / hero. / footer. / common. 等，保持语义与组件一致。
+- 第二层开始只用小写与点号分隔，描述具体元素，如 nav.whatWeDo、hero.cta.primary。
+- 相似结构的文案使用统一层级，例如按钮统一 `*.cta.primary` / `*.cta.secondary`。
+- 所有语言文件保持相同 key 结构，新增文案时同时在 EN/FR/ZH 内补齐。
+语言切换时：
+更新 <html lang>
+切换路由组
+写入 cookie (NEXT_LOCALE)
+当前语言按钮设 aria-current="true"
+
+
+5. 品牌与视觉规范
+元素	要求
+主色	#5EBFCC (Nayuta Blue)
+辅色	黑 #111 / 灰 #6B7280 / 白 #FFF
+字体	--font-brand 变量 + 系统回退
+阴影	0 1px 2px rgba(0,0,0,0.06)
+动效	过渡 150–200 ms （轻微）
+布局	最大宽 1200 px，充足留白
+
+
+6. SEO 结构
+每页通过 metadata 导出 title / description / openGraph / twitter。
+默认 title: Company | Independent Inspection Services
+描述：简洁 160 字符内。
+页面唯一 H1 、层级 H2/H3 清晰。
+内置 robots.txt 与 sitemap.xml； sitemap 包含所有语言版本。
+Schema JSON-LD 放在 layout.tsx 底部。
+
+
+7. GEO 优化（Geo Targeting & Local Signals）
+<head> 增加：
+<meta name="geo.region" content="CA">
+<meta name="geo.placename" content="Vancouver">
+<meta name="geo.position" content="49.2827;-123.1207">
+<meta name="ICBM" content="49.2827, -123.1207">
+<link rel="alternate" hreflang> 包含 en / fr / zh / x-default
+Footer 中显式地址：
+<address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+  <span itemprop="addressLocality">Vancouver</span>,
+  <span itemprop="addressRegion">BC</span>,
+  <span itemprop="addressCountry">Canada</span>
+</address>
+在 metadata.other 同步 geo 信息。
+Sitemap 支持多地区；未来可扩展 /en-us 、/fr-ca 等。
+
+8. AI 索引（AI Indexing / Semantic Discoverability）
+robots.txt 允许 GPTBot、Bing AI 爬虫：
+User-agent: GPTBot
+Allow: /
+User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml
+Schema 数据 详述 Organization、WebSite、Service。
+每页含 <meta name="keywords"> （目前空，占位待后续填写）。
+页面描述中自然包含地理与服务语义，如 “inspection in China for global brands”。
+在页脚展示社交链接与地址，增加 E-E-A-T 信号（Experience / Expertise / Authoritativeness / Trust）。
+保持多语言一致品牌描述，助 AI 聚合实体。
+
+9. 无障碍 (A11y)
+所有交互元素可键盘访问； focus-visible 清晰。
+对比度 ≥ 4.5:1。
+图片 alt 完整；语言切换按钮带 aria-label。
+页面语言与方向与内容一致。
+
+10. 代码规范
+TypeScript strict 模式。
+ESLint + Prettier + prettier-plugin-tailwindcss。
+Tailwind class 命名语义化。
+禁止未使用代码与 console 输出。
+所有外链 rel="noopener noreferrer"。
+
+11. 部署与运行环境
+Node.js 默认使用当前 LTS（建议 20.x），通过 .nvmrc 或 package.json 的 engines 字段锁定版本，确保本地开发与 CI/CD 一致。
+依赖管理统一采用 pnpm，并提交 pnpm-lock.yaml；在 CI 中固定 pnpm 版本，避免锁文件分裂。
+默认部署目标为 Vercel（可扩展 Docker 镜像流程），文档标注构建命令、环境变量与缓存目录，方便复刻上线步骤。
