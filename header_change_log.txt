@@ -1,0 +1,14 @@
+﻿HEADER CHANGE LOG
+1. Replace the placeholder nav anchors (# plus preventNavigation) with real routes via next/link so the header actually navigates.
+   中文：将占位导航链接（# 与 preventNavigation）替换为通过 next/link 的真实路由，让页头真正可导航。
+2. Highlight the active nav item based on the current route or scroll position to give users location feedback.
+   中文：依据当前路由或滚动位置高亮对应导航项，为用户提供所在位置反馈。
+3. Point the login CTA to the real auth entry and reuse a shared Button component across desktop/mobile for consistent visuals.
+   中文：让登录 CTA 指向真实认证入口，并在桌面与移动端复用统一按钮组件以保持一致视觉。
+4. Close the mobile menu after selecting an item or switching language and keep aria-expanded plus focus states in sync.
+   中文：在选择条目或切换语言后关闭移动端菜单，并保持 aria-expanded 与焦点状态同步。
+5. Add a high-priority CTA (e.g., Contact Us phone button) and a skip link or clearer aria labels to improve conversions and accessibility.
+   中文：增加高优先级 CTA（如联系我们或电话按钮）以及跳转链接或更明确的 aria 标签，以提升转化和可访问性。
+6. Tooltips need smooth show/hide animation, stay visible while the cursor is over the header or the tooltip itself, and use a light gray background for contrast against white.
+   中文：提示框需要平滑的出现与收回动画，鼠标在 Header 区域或提示框上时保持显示，并使用比白色略深的浅灰底色形成对比。
+

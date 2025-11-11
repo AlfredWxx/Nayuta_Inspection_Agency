@@ -16,7 +16,8 @@ export default {
         muted: 'var(--color-muted)'
       },
       fontFamily: {
-        brand: ['var(--font-brand)', 'system-ui', 'sans-serif']
+        brand: ['var(--font-brand)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-heading)', 'Merriweather', 'serif']
       },
       boxShadow: {
         subtle: 'var(--shadow-subtle)'

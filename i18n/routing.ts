@@ -7,6 +7,10 @@ export const {Link, redirect, usePathname, useRouter} =
     localePrefix,
     defaultLocale,
     pathnames: {
-      '/': '/'
+      '/': '/',
+      '/what-we-do': '/what-we-do',
+      '/our-firm': '/our-firm',
+      '/career': '/career',
+      '/login': '/login'
     }
   });
