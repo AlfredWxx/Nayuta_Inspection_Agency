@@ -61,7 +61,7 @@ export default function LanguageSwitcher() {
         aria-label={t('ariaLabel')}
         aria-expanded={isOpen}
         aria-haspopup="dialog"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-body shadow-subtle transition-colors duration-150 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+        className="inline-flex h-10 w-10 items-center justify-center text-body transition-colors duration-150 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
       >
         <svg
           className="h-5 w-5"

@@ -16,7 +16,11 @@ export default function Logo() {
       aria-label={`${t('companyName')} home`}
       className="inline-flex items-center transition-colors duration-150 hover:text-brand"
     >
-      <span aria-hidden="true" className="h-12 w-auto">
+      <span
+        aria-hidden="true"
+        className="w-auto"
+        style={{height: '3.3rem'}}
+      >
         <LogoMark className="h-full w-auto" />
       </span>
       <span className="sr-only">{t('companyName')}</span>

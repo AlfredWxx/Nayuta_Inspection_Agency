@@ -9,16 +9,92 @@
     "whatWeDo": "我们的服务",
     "ourFirm": "关于我们",
     "career": "加入我们",
-    "login": "登录"
+    "login": "登录",
+    "dropdown": {
+      "whatWeDo": {
+        "title": "质检服务",
+        "factoryAudits": {
+          "title": "工厂审核",
+          "description": "量化合规、产能与社会责任，生产前就锁定潜在风险。"
+        },
+        "inlineInspection": {
+          "title": "生产过程巡检",
+          "description": "在制程关键节点抽检，及早发现并纠正缺陷。"
+        },
+        "preShipment": {
+          "title": "出货前抽检",
+          "description": "发货前随机抽样，双语报告帮助定位问题批次。"
+        }
+      },
+      "ourFirm": {
+        "title": "关于我们",
+        "leadership": {
+          "title": "管理团队",
+          "description": "15+ 年深耕中国制造业的资深质量负责人。"
+        },
+        "presence": {
+          "title": "中国覆盖",
+          "description": "验货员遍布深圳、广州、宁波、青岛、温州及内陆产业带。"
+        },
+        "certifications": {
+          "title": "专业认证",
+          "description": "通过 ISO 体系训练，熟悉 CPSIA、CE、REACH 及各大零售商标准。"
+        }
+      },
+      "career": {
+        "title": "加入我们",
+        "inspectors": {
+          "title": "现场验货员",
+          "description": "加入全国网络，深入工厂执行第三方检测。"
+        },
+        "specialists": {
+          "title": "质量专家",
+          "description": "双语分析师，将缺陷数据转化为供应商整改方案。"
+        },
+        "openRoles": {
+          "title": "所有职位",
+          "description": "查看运营、客户与技术等全球岗位机会。"
+        }
+      }
+    }
   },
   "hero": {
-    "kicker": "值得信赖的质检",
-    "title": "值得信赖的独立验货",
-    "subtitle": "我们为全球品牌在中国提供透明、第三方的验货与质量控制方案，确保产品符合标准。",
-    "description": "从工厂审核到出货前抽检，我们的双语团队提供详尽报告、可执行洞察以及遍布中国制造中心的可靠合作伙伴。",
+    "heading1": {
+      "line1": "全球检验",
+      "line2": "透明可信"
+    },
+    "heading2": "独立的产品与工厂审核，助力成长型品牌在全球范围交付经验证的质量。",
+    "text1": "精准跨越边界。",
     "cta": {
       "primary": "联系我们",
       "secondary": "了解更多"
+    },
+    "sample": {
+      "badge": "报告样本",
+      "title": "预览一份验货报告",
+      "description": "查看 48 小时内交付的缺陷矩阵、标注照片以及合规摘要，提前了解交付格式。",
+      "button": "获取报告样本",
+      "meta": "包含双语点评与定位信息。",
+      "imageAlt": "验货报告样张示意"
+    },
+    "panel": {
+      "items": {
+        "speed": {
+          "metric": "48 小时",
+          "label": "报告交付",
+          "description": "双语结论、缺陷编码与合规备注在两个工作日内送达。"
+        },
+        "inspectors": {
+          "metric": "120+",
+          "label": "中国验货员",
+          "description": "覆盖深圳、广州、宁波、青岛及内陆产业带的资深审核团队。"
+        },
+        "checkpoints": {
+          "metric": "300+",
+          "label": "检查要点",
+          "description": "面向电子、服装、家居等品类的定制化检查清单。"
+        }
+      }
     },
     "bullets": {
       "quality": "资深验货员覆盖深圳、广州、宁波等主要制造城市。",

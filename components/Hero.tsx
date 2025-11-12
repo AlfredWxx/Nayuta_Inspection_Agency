@@ -1,70 +1,73 @@
 'use client';
 
+import Image from 'next/image';
 import {useTranslations} from 'next-intl';
 import Container from './Container';
+
+const PANEL_ITEMS = ['speed', 'inspectors', 'checkpoints'] as const;
 
 export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="bg-white py-16 sm:py-24">
-      <Container className="grid gap-10 md:grid-cols-[3fr_2fr] md:items-center">
-        <div className="space-y-6">
-          <p className="text-sm uppercase tracking-[0.3em] text-brand">
-            {t('kicker')}
-          </p>
-          <h1 className="text-4xl font-semibold leading-tight text-body sm:text-5xl">
-            {t('title')}
-          </h1>
-          <p className="max-w-xl text-lg leading-relaxed text-muted">
-            {t('subtitle')}
-          </p>
-          <p className="max-w-xl text-base leading-relaxed text-muted">
-            {t('description')}
-          </p>
-          <div className="flex flex-wrap items-center gap-4">
+    <section className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-900 to-white py-16 sm:py-24">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(94,143,204,0.25),transparent_50%)]"
+      />
+      <Container className="relative grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+        <div className="space-y-8 text-white">
+          <div className="space-y-6">
+            <p className="text-sm italic text-brand">
+              {t('text1')}
+            </p>
+            <h1 className="font-heading text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+              <span className="block">{t('heading1.line1')}</span>
+              <span className="block">{t('heading1.line2')}</span>
+            </h1>
+            <p className="max-w-3xl font-sans text-lg leading-relaxed text-slate-100/85 sm:text-xl">
+              {t('heading2')}
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-3">
+            {PANEL_ITEMS.map((itemKey) => (
+              <article
+                key={itemKey}
+                className="border border-white/20 bg-slate-900/40 p-6 text-white shadow-[0_25px_80px_rgba(15,23,42,0.35)]"
+              >
+                <p className="text-3xl font-semibold">
+                  {t(`panel.items.${itemKey}.metric`)}
+                </p>
+                <p className="mt-2 text-xs uppercase tracking-[0.3em] text-white/60">
+                  {t(`panel.items.${itemKey}.label`)}
+                </p>
+                <p className="mt-3 text-sm text-white/80">
+                  {t(`panel.items.${itemKey}.description`)}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-2xl transition-transform duration-1000 ease-out hover:scale-[1.03] focus-within:scale-[1.03] lg:max-w-[86%]">
+            <Image
+              src="/assets/Nayuta_hero1.png"
+              alt={t('sample.imageAlt')}
+              width={1380}
+              height={1035}
+              sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 35vw"
+              className="h-auto w-full object-contain"
+              priority
+            />
             <button
               type="button"
-              className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-subtle transition-transform duration-150 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-              disabled
-              aria-disabled="true"
+              className="absolute bottom-4 right-4 border border-brand px-6 py-3 text-sm font-semibold text-brand transition-colors duration-150 hover:bg-brand hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
-              {t('cta.primary')}
-            </button>
-            <button
-              type="button"
-              className="rounded-full border border-brand px-6 py-3 text-sm font-semibold text-brand transition-transform duration-150 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-              disabled
-              aria-disabled="true"
-            >
-              {t('cta.secondary')}
+              {t('sample.button')}
             </button>
           </div>
         </div>
-        <div className="rounded-3xl border border-gray-200 bg-slate-50 p-8 shadow-subtle">
-          <ul className="space-y-4 text-sm text-muted">
-            <FeatureItem text={t('bullets.quality')} />
-            <FeatureItem text={t('bullets.speed')} />
-            <FeatureItem text={t('bullets.coverage')} />
-            <FeatureItem text={t('bullets.compliance')} />
-          </ul>
-        </div>
       </Container>
     </section>
-  );
-}
-
-type FeatureItemProps = {
-  text: string;
-};
-
-function FeatureItem({text}: FeatureItemProps) {
-  return (
-    <li className="flex items-start gap-3">
-      <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand/10 text-brand">
-        ✓
-      </span>
-      <span className="leading-relaxed">{text}</span>
-    </li>
   );
 }

@@ -9,16 +9,92 @@
     "whatWeDo": "What we do",
     "ourFirm": "Our firm",
     "career": "Career",
-    "login": "Login"
+    "login": "Login",
+    "dropdown": {
+      "whatWeDo": {
+        "title": "Inspection services",
+        "factoryAudits": {
+          "title": "Factory audits",
+          "description": "Validate compliance, capacity, and social responsibility before production kicks off."
+        },
+        "inlineInspection": {
+          "title": "Inline inspections",
+          "description": "Mid-production checkpoints that surface defects early and keep launch schedules on track."
+        },
+        "preShipment": {
+          "title": "Pre-shipment QC",
+          "description": "Final random inspections with bilingual reporting before containers depart China."
+        }
+      },
+      "ourFirm": {
+        "title": "Our firm",
+        "leadership": {
+          "title": "Leadership",
+          "description": "Seasoned QA directors with 15+ years embedded in China’s manufacturing hubs."
+        },
+        "presence": {
+          "title": "China footprint",
+          "description": "Inspectors across Shenzhen, Guangzhou, Ningbo, Qingdao, Wenzhou, and inland clusters."
+        },
+        "certifications": {
+          "title": "Certifications",
+          "description": "ISO-trained teams fluent in CPSIA, CE, REACH, and retailer-specific protocols."
+        }
+      },
+      "career": {
+        "title": "Careers",
+        "inspectors": {
+          "title": "Field inspectors",
+          "description": "Join our nationwide network delivering hands-on inspections for global brands."
+        },
+        "specialists": {
+          "title": "Quality specialists",
+          "description": "Bilingual analysts who turn defect data into supplier action plans."
+        },
+        "openRoles": {
+          "title": "All open roles",
+          "description": "Explore operations, client success, and technology positions worldwide."
+        }
+      }
+    }
   },
   "hero": {
-    "kicker": "Trusted inspections",
-    "title": "Independent inspection you can trust",
-    "subtitle": "We help global brands ensure product quality in China with transparent, third-party inspection programs.",
-    "description": "From factory audits to pre-shipment checks, our bilingual team delivers detailed reports, actionable insights, and reliable partners across Chinese manufacturing hubs.",
+    "heading1": {
+      "line1": "Global Inspection",
+      "line2": "Verified Transparency"
+    },
+    "heading2": "Independent product and factory audits empowering growing brands to deliver verified quality worldwide.",
+    "text1": "Precision Beyond Borders.",
     "cta": {
       "primary": "Get in touch",
       "secondary": "Learn more"
+    },
+    "sample": {
+      "badge": "Sample report",
+      "title": "Preview an inspection report",
+      "description": "See the defect matrix, annotated photography, and compliance summary your team receives within 48 hours.",
+      "button": "Get sample report",
+      "meta": "Includes bilingual commentary and geo-tagged findings.",
+      "imageAlt": "Sample quality inspection report layout"
+    },
+    "panel": {
+      "items": {
+        "speed": {
+          "metric": "48h",
+          "label": "Report turnaround",
+          "description": "Bilingual findings, defect coding, and compliance notes delivered within two business days."
+        },
+        "inspectors": {
+          "metric": "120+",
+          "label": "Inspectors nationwide",
+          "description": "Trusted auditors positioned across Shenzhen, Guangzhou, Ningbo, Qingdao, and inland clusters."
+        },
+        "checkpoints": {
+          "metric": "300+",
+          "label": "Checklist points",
+          "description": "Category-specific SOPs covering consumer electronics, apparel, and home goods."
+        }
+      }
     },
     "bullets": {
       "quality": "Expert inspectors on site across Shenzhen, Guangzhou, Ningbo, and more.",

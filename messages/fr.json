@@ -9,16 +9,92 @@
     "whatWeDo": "Nos services",
     "ourFirm": "Notre cabinet",
     "career": "Carrières",
-    "login": "Connexion"
+    "login": "Connexion",
+    "dropdown": {
+      "whatWeDo": {
+        "title": "Services d’inspection",
+        "factoryAudits": {
+          "title": "Audits d’usine",
+          "description": "Évaluez conformité, capacité et responsabilité sociale avant le démarrage de production."
+        },
+        "inlineInspection": {
+          "title": "Contrôles en cours de production",
+          "description": "Points de contrôle successifs pour détecter les défauts dès les premières séries."
+        },
+        "preShipment": {
+          "title": "Contrôles pré-expédition",
+          "description": "Inspections finales aléatoires avec rapports bilingues avant l’expédition depuis la Chine."
+        }
+      },
+      "ourFirm": {
+        "title": "Notre cabinet",
+        "leadership": {
+          "title": "Équipe de direction",
+          "description": "Directeurs qualité seniors avec plus de 15 ans dans les pôles industriels chinois."
+        },
+        "presence": {
+          "title": "Présence en Chine",
+          "description": "Inspecteurs basés à Shenzhen, Guangzhou, Ningbo, Qingdao, Wenzhou et dans les clusters intérieurs."
+        },
+        "certifications": {
+          "title": "Certifications",
+          "description": "Équipes formées ISO, expertes CPSIA, CE, REACH et protocoles propres aux distributeurs."
+        }
+      },
+      "career": {
+        "title": "Carrières",
+        "inspectors": {
+          "title": "Inspecteurs terrain",
+          "description": "Rejoignez notre réseau national pour conduire des inspections sur site."
+        },
+        "specialists": {
+          "title": "Spécialistes qualité",
+          "description": "Analystes bilingues transformant les données défauts en plans d’action fournisseurs."
+        },
+        "openRoles": {
+          "title": "Offres ouvertes",
+          "description": "Découvrez les postes en opérations, relation client et technologie à travers le monde."
+        }
+      }
+    }
   },
   "hero": {
-    "kicker": "Inspections fiables",
-    "title": "Inspection indépendante, en toute confiance",
-    "subtitle": "Nous aidons les marques internationales à garantir la qualité de leurs produits en Chine grâce à des programmes d’inspection tiers transparents.",
-    "description": "Des audits d’usine aux contrôles avant expédition, notre équipe bilingue fournit des rapports détaillés, des analyses exploitables et des partenaires fiables dans les principaux bassins industriels chinois.",
+    "heading1": {
+      "line1": "Inspection mondiale",
+      "line2": "Transparence vérifiée"
+    },
+    "heading2": "Des audits indépendants de produits et d’usines permettent aux marques en croissance de livrer une qualité certifiée partout dans le monde.",
+    "text1": "Précision sans frontières.",
     "cta": {
       "primary": "Contactez-nous",
       "secondary": "En savoir plus"
+    },
+    "sample": {
+      "badge": "Exemple de rapport",
+      "title": "Découvrez un rapport d’inspection",
+      "description": "Consultez la matrice de défauts, les photos annotées et le résumé conformité livrés à vos équipes sous 48 h.",
+      "button": "Obtenir un rapport type",
+      "meta": "Commentaires bilingues et constats géolocalisés inclus.",
+      "imageAlt": "Aperçu d’un rapport d’inspection qualité"
+    },
+    "panel": {
+      "items": {
+        "speed": {
+          "metric": "48 h",
+          "label": "Délai de rapport",
+          "description": "Résultats bilingues, codification des défauts et notes conformité en moins de deux jours ouvrés."
+        },
+        "inspectors": {
+          "metric": "120+",
+          "label": "Inspecteurs en Chine",
+          "description": "Auditeurs répartis à Shenzhen, Guangzhou, Ningbo, Qingdao et dans les bassins intérieurs."
+        },
+        "checkpoints": {
+          "metric": "300+",
+          "label": "Points de contrôle",
+          "description": "SOP adaptées aux produits électroniques, mode et articles de maison."
+        }
+      }
     },
     "bullets": {
       "quality": "Inspecteurs experts sur site à Shenzhen, Guangzhou, Ningbo et au-delà.",
